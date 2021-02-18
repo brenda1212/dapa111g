@@ -10,6 +10,10 @@
 .App {
   background-image: url(./assets/imagen.jpg);
 }
+.container {
+  padding: 3rem 20rem;
+}
+
 
 
 

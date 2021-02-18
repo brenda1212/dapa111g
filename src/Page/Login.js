@@ -1,40 +1,34 @@
 import React from "react";
 //import { Container } from "reactstrap";
-import { Container, Form, Button ,Row} from "reactstrap";
+import { Container, Form, Button ,Card,Input} from "reactstrap";
 
 function Login() {
   return (
     <Container>
-      <Row className="justify-content-md-center">
-        <div className="card mt-5">
-          <Form className="text-center border border-center p-6">
-            <p className="h4 mb-4">Bienvenido</p>
+      <Card className="text-center border border-center p-2 card  col-lg-6 ">
+        <Form>
+          <p className="h4 mb-4">Bienvenido</p>
 
-            <p>
-              Join our mailing list. We write rarely, but only with the best
-              content.
-            </p>
+          <p>inicia sesión o crea tu cuenta.</p>
 
-            <input
-              type="text"
-              id="defaultSubscriptionFormPassword"
-              className="form-control mb-4"
-              placeholder="Name"
-            />
+          <Input
+            type="text"
+            id="defaultSubscriptionFormPassword"
+            className="form-control mb-4"
+            placeholder="Name"
+          />
 
-            <input
-              type="email"
-              id="defaultSubscriptionFormEmail"
-              className="form-control mb-4"
-              placeholder="E-mail"
-            />
-
-            <Button mdbBtn color="info" block="true" type="submit">
-              Sign in
-            </Button>
-          </Form>
-        </div>
-      </Row>
+          <Input
+            type="email"
+            id="defaultSubscriptionFormEmail"
+            className="form-control mb-4"
+            placeholder="E-mail"
+          />
+          <Button mdbBtn color="info" block="true" type="submit">
+            Iniciar sesión
+          </Button>
+        </Form>
+      </Card>
     </Container>
   );
 }
