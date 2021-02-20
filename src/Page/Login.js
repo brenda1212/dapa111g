@@ -5,6 +5,7 @@ import { Container, Form, Button ,Card,Input} from "reactstrap";
 function Login() {
   return (
     <Container>
+      <form>
       <Card className="text-center border border-center p-2 card  col-lg-6 ">
         <Form>
           <p className="h4 mb-4">Bienvenido</p>
@@ -28,7 +29,7 @@ function Login() {
             Iniciar sesión
           </Button>
         </Form>
-      </Card>
+      </Card></form>
     </Container>
   );
 }
